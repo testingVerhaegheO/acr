@@ -56,7 +56,7 @@
                 ]
             },
             "dependsOn": [
-                "[resourceId('microsoft.operationalinsights/workspaces', parameters(workspaceName'))]"
+                "[resourceId('microsoft.operationalinsights/workspaces', parameters('workspaceName'))]"
             ]
         }
      ]
