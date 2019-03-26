@@ -36,6 +36,24 @@
                   "searchVersion": 1
               }
           }
+        },
+        {
+            "type": "Microsoft.OperationsManagement/solutions",
+            "name": "[parameters('solutions_Containers(testingVerhaegheO07)_name')]",
+            "apiVersion": "2015-11-01-preview",
+            "location": "West Europe",
+            "plan": {
+                "name": "Containers(testingVerhaegheO07)",
+                "promotionCode": "",
+                "product": "OMSGallery/Containers",
+                "publisher": "Microsoft"
+            },
+            "properties": {
+                "workspaceResourceId": "[resourceId('microsoft.operationalinsights/workspaces', parameters('workspaceName'))]"
+            },
+            "dependsOn": [
+                "[resourceId('microsoft.operationalinsights/workspaces', parameters('workspaceName'))]"
+            ]
         }
      ]
   }
