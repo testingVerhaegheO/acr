@@ -39,7 +39,7 @@
         },
         {
             "type": "Microsoft.OperationsManagement/solutions",
-            "name": "Conatainers",
+            "name": "Containers(testingVerhaegheO07)",
             "apiVersion": "2015-11-01-preview",
             "location": "West Europe",
             "plan": {
@@ -48,14 +48,15 @@
                 "product": "OMSGallery/Containers",
                 "publisher": "Microsoft"
             },
+            "scale": null,
             "properties": {
-                "workspaceResourceId": "[resourceId('microsoft.operationalinsights/workspaces', parameters('workspaceName'))]",
+                "workspaceResourceId": "[resourceId('microsoft.operationalinsights/workspaces', parameters(workspaceName'))]",
                 "containedResources": [
                     "/subscriptions/a6e10cb0-79e5-4b68-af13-d17fc5f7505a/resourcegroups/testingverhaegheo03/providers/microsoft.operationalinsights/workspaces/testingverhaegheo07/views/Containers(testingverhaegheo07)"
                 ]
             },
             "dependsOn": [
-                "[resourceId('microsoft.operationalinsights/workspaces', parameters('workspaceName'))]"
+                "[resourceId('microsoft.operationalinsights/workspaces', parameters(workspaceName'))]"
             ]
         }
      ]
