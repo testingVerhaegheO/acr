@@ -39,7 +39,7 @@
         },
         {
             "type": "Microsoft.OperationsManagement/solutions",
-            "name": "[parameters('solutions_Containers(testingVerhaegheO07)_name')]",
+            "name": "[concat('Containers(',parameters('workspaceName'),')']",
             "apiVersion": "2015-11-01-preview",
             "location": "West Europe",
             "plan": {
