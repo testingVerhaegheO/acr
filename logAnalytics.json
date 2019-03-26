@@ -52,7 +52,7 @@
             "properties": {
                 "workspaceResourceId": "[resourceId('microsoft.operationalinsights/workspaces', parameters('workspaceName'))]",
                 "containedResources": [
-                    "/subscriptions/a6e10cb0-79e5-4b68-af13-d17fc5f7505a/resourcegroups/testingverhaegheo04/providers/microsoft.operationalinsights/workspaces/testingverhaegheo07/views/Containers(testingverhaegheo07)"
+                    "/subscriptions/a6e10cb0-79e5-4b68-af13-d17fc5f7505a/resourcegroups/testingverhaegheo04/providers/microsoft.operationalinsights/workspaces/testingverhaegheo0!/views/Containers(testingverhaegheo07)"
                 ]
             },
             "dependsOn": [
