@@ -39,7 +39,7 @@
         },
         {
             "type": "Microsoft.OperationsManagement/solutions",
-            "name": "[concat('Containers(',parameters('workspaceName'),')']",
+            "name": "Conatainers",
             "apiVersion": "2015-11-01-preview",
             "location": "West Europe",
             "plan": {
