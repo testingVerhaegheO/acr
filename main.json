@@ -8,6 +8,9 @@
             "apiVersion": "2017-05-10",
             "name": "loganalytics",
             "type": "Microsoft.Resources/deployments",
+            "dependsOn": [
+                "[resourceId('Microsoft.Resources/deployments', 'acr')]"
+            ],
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
@@ -24,9 +27,6 @@
             "apiVersion": "2017-05-10",
             "name": "acr",
             "type": "Microsoft.Resources/deployments",
-            "dependsOn": [
-                "[resourceId('Microsoft.Resources/deployments', 'loganalytics')]"
-            ],
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
